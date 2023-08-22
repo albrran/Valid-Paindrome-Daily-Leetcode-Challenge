@@ -22,11 +22,10 @@
         <p>Explanation: s is an empty string "" after removing non-alphanumeric characters. Since an empty string reads the same forward and backward, it is a palindrome.</p>
     </div>
 
-  <h1>Solution 1: </h1>
-
+  <h1>Solution 1: Regex expression and Char Array</h1>
+<p>Our input can be a sentence, which has spaces, nonalphabetical letters, and capital letters. Let's remove those and put each character in a character array. Next let's traverse the array, comparing if the value at the current index is equal to the last value at the last index. Each time we increment we compare with the last value - index. Think of it like finding the median of a given set of numbers as we slowly get to the middle</p>
 <br>
 <p><h2> Let's break it down into steps!</h2></p>
-<br>
   <ul>
         <li>
             <h2>Step 1: Check for Single Space</h2>
@@ -46,3 +45,5 @@
             <p>If the loop completes without finding any unequal characters, the method returns true, indicating that the input string "s" is a palindrome.</p>
         </li>
     </ul>
+    <p>Time Complexity: O(nlogn). We are using the toCharArray() method and a for loop which results in nlogn</p>
+    <p>Space Complexity: O(n). We are creating a new temp array of characters.</p>
