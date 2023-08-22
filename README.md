@@ -25,6 +25,9 @@
   <h1>Solution 1: Regex expression and Char Array</h1>
 <p>Our input can be a sentence, which has spaces, nonalphabetical letters, and capital letters. Let's remove those and put each character in a character array. Next let's traverse the array, comparing if the value at the current index is equal to the last value at the last index. Each time we increment we compare with the last value - index. Think of it like finding the median of a given set of numbers as we slowly get to the middle</p>
 <br>
+
+![leetcode palindrome gif](https://github.com/albrran/Valid-Paindrome-Daily-Leetcode-Challenge/assets/120284166/8d042361-c63b-4943-8d9e-a00735aefda9)
+
 <p><h2> Let's break it down into steps!</h2></p>
   <ul>
         <li>
